@@ -69,3 +69,5 @@ SQLALCHEMY_DATABASE_URI = get_database_uri(DATABASE_NAME, DATABASE_HOST, censore
 CENSORED_URI = get_database_uri(DATABASE_NAME, DATABASE_HOST, censored=True)
 
 print('Working database URI: ' + CENSORED_URI)
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
