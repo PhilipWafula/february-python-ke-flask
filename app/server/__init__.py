@@ -4,9 +4,8 @@ import sys
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-import config
-
 sys.path.append('../')
+import config
 
 
 def create_app():

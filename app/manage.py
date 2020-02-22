@@ -3,11 +3,15 @@ from flask_migrate import Migrate, MigrateCommand
 import sys
 import os
 
+from server import create_app, db
+# import models TODO [Philip]: Optimize model imports for manage.py
+from server.models import import_models
+
 parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
 sys.path.append(parent_dir)
 sys.path.append(os.getcwd())
 
-from server import create_app, db
+
 
 app = create_app()
 manager = Manager(app)
