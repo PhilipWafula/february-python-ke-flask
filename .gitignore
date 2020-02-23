@@ -1,0 +1,14 @@
+# IDE Files
+.DS_STORE
+.vscode
+.idea
+.env
+
+# python
+*.pyc
+
+# config
+/configs/*
+
+# virtual environment files
+/venv/*
